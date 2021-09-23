@@ -1,9 +1,6 @@
 [submodule "srl/allennlp"]
 	path = srl/allennlp
 	url = https://github.com/allenai/allennlp.git
-[submodule "summarizer/summarizer/bert"]
-	path = summarizer/summarizer/bert
-	url = https://github.com/google-research/bert.git
 [submodule "summarizer/bert"]
 	path = summarizer/bert
 	url = https://github.com/google-research/bert.git
