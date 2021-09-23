@@ -1,0 +1,15 @@
+The malware connects to the Command & Control (CnC) server.
+The "Authorization.exe" malware has keylogger functionality.
+It stores the logged keystrokes in the following file: [CWD]\.tmp
+When the "Authorization.exe" malware is executed it :
+Creates a copy of itself in the following locations: %APPDATA% %USERNAME%
+Tries to open the following file: [CWD]\Authorization.exe.config
+Entrenches in the system for persistence in the following registry locations:
+HKCU\...\bf7a7ffda58092e10 HKLM\...\bfda58092e10
+Beacons to the following C2 node IP:.* over TCP port 1177:"217.66.231.245”
+Makes the following modification to the registry to bypass the Windows Firewall:
+HKLM\...\msnco.exe
+The downloaded file is decoded, written to disk as %APPDATA%\...\ccSvcHst
+The following files created when the Authorization.exe malware executed: msnco.exe
+authorization.EXE-0AD199D6.pf
+Msnco.exe and Authorization.EXE-0AD199D6.pf are created by Authorization.exe.
