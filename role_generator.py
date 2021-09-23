@@ -6,7 +6,7 @@
 '''
 Author: Kun
 Date: 2021-09-16 11:21:47
-LastEditTime: 2021-09-23 16:34:43
+LastEditTime: 2021-09-23 17:56:16
 LastEditors: Kun
 Description: 
 FilePath: /ThreatReportExtractor/role_generator.py
@@ -27,12 +27,14 @@ from project_config import SEC_PATTERNS_FILE_PATH
 
 
 class RoleGenerator(object):
-    def __init__(self, nlp) -> None:
+    def __init__(self, nlp, main_verbs) -> None:
         super(RoleGenerator, self).__init__()
 
         self.nlp = nlp  # self.svo_extractor.nlp
 
         self.svo_extractor = SubjectVerbObjectExtractor(nlp)
+
+        self.main_verbs = main_verbs
 
     def colon_seprator_multiplication(self, stri):
         print("[colon_seprator_multiplication] stri: ", stri)
@@ -71,7 +73,7 @@ class RoleGenerator(object):
             result += "."
         return result
 
-    def roles(self, sentences, main_verbs):
+    def roles(self, sentences):
         my_svo_triplet = []
         all_nodes = []
         for i in range(len(sentences)):
@@ -91,7 +93,7 @@ class RoleGenerator(object):
 
             for lis_ in nodes:
                 for indx in range(len(lis_)):
-                    if lis_[0].split(":", 1)[0].lower().strip() == "v" and lis_[0].split(":", 1)[1].lower().strip() in main_verbs:
+                    if lis_[0].split(":", 1)[0].lower().strip() == "v" and lis_[0].split(":", 1)[1].lower().strip() in self.main_verbs:
                         n = len(lis_)
                         for j in range(1, len(lis_)):
                             if lis_[j].split(":", 1)[0].lower() != "v":
