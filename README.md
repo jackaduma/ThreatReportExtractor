@@ -1,7 +1,7 @@
 <!--
  * @Author: Kun
  * @Date: 2021-09-16 11:11:28
- * @LastEditTime: 2021-09-24 00:24:53
+ * @LastEditTime: 2021-09-24 14:30:51
  * @LastEditors: Kun
  * @Description: 
  * @FilePath: /ThreatReportExtractor/README.md
@@ -16,7 +16,7 @@
 
 ------
 
-This code is an implementation for paper: [EXTRACTOR: Extracting Attack Behavior from Threat Reports](https://arxiv.org/abs/2104.08618), a nice work on **Threat Report Extracting** in Cyber Security Domain.
+This code is an implementation for paper: [EXTRACTOR: Extracting Attack Behavior from Threat Reports](https://arxiv.org/abs/2104.08618), a nice work on **Threat Report Extracting** in Cyber Threat Intelligence (CTI) .
 
 - [x] Environment
   - [x] NLP submodules
@@ -34,7 +34,7 @@ This code is an implementation for paper: [EXTRACTOR: Extracting Attack Behavior
 ### [**Paper Page**](https://arxiv.org/abs/2104.08618)
 
 
-The knowledge on attacks contained in Cyber Threat Intelligence (CTI) reports is very important to effectively identify and quickly respond to cyber threats. However, this knowledge is often embedded in large amounts of text, and therefore difficult to use effectively. To address this challenge, we propose a novel approach and tool called EXTRACTOR that allows precise automatic extraction of concise attack behaviors from CTI reports. EXTRACTOR makes no strong assumptions about the text and is capable of extracting attack behaviors as provenance graphs from unstructured text. We evaluate EXTRACTOR using real-world incident reports from various sources as well as reports of DARPA adversarial engagements that involve several attack campaigns on various OS platforms of Windows, Linux, and FreeBSD. Our evaluation results show that EXTRACTOR can extract concise provenance graphs from CTI reports and show that these graphs can successfully be used by cyber-analytics tools in threat-hunting.
+The knowledge on attacks contained in **Cyber Threat Intelligence (CTI)** reports is very important to effectively identify and quickly respond to cyber threats. However, this knowledge is often embedded in large amounts of text, and therefore difficult to use effectively. To address this challenge, we propose a novel approach and tool called EXTRACTOR that allows precise automatic extraction of concise attack behaviors from CTI reports. EXTRACTOR makes no strong assumptions about the text and is capable of extracting attack behaviors as provenance graphs from unstructured text. We evaluate EXTRACTOR using real-world incident reports from various sources as well as reports of DARPA adversarial engagements that involve several attack campaigns on various OS platforms of Windows, Linux, and FreeBSD. Our evaluation results show that EXTRACTOR can extract concise provenance graphs from CTI reports and show that these graphs can successfully be used by cyber-analytics tools in threat-hunting.
 
 
 ------
