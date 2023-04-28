@@ -1,10 +1,10 @@
 <!--
  * @Author: Kun
  * @Date: 2021-09-16 11:11:28
- * @LastEditTime: 2021-09-24 14:30:51
+ * @LastEditTime: 2023-04-29 06:15:22
  * @LastEditors: Kun
  * @Description: 
- * @FilePath: /ThreatReportExtractor/README.md
+ * @FilePath: /my_open_projects/ThreatReportExtractor/README.md
 -->
 
 # **ThreatReportExtractor**
@@ -154,6 +154,11 @@ python main.py --asterisk true --crf false --rmdup true --elip true --input_file
 3. Passive/Active sentence Transformer. [Code](https://github.com/DanManN/pass2act)
 
 ------
+## **Star-History**
+
+![star-history](https://api.star-history.com/svg?repos=jackaduma/ThreatReportExtractor&type=Date "star-history")
+
+------
 
 ## Donation
 If this project help you reduce time to develop, you can give me a cup of coffee :) 
@@ -168,10 +173,9 @@ WechatPay(微信)
     <img src="./misc/wechat_pay.png" alt="wechat_pay" width="400" />
 </div>
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/jackaduma?locale.x=zh_XC)
-
 ------
 
 ## **License**
 
 [GPL-3.0](LICENSE) © Kun
+
